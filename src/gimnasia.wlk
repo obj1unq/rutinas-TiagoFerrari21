@@ -41,7 +41,7 @@ class RemoDeCompeticion inherits Remo () {
     }
 
     override method tiempoDescanso(tiempo){
-        return ((tiempo/5)-3).max(2)
+        return (super(tiempo) - 3).max(2)
     }
 }
 
