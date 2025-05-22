@@ -39,7 +39,7 @@ Es un tipo especial de Running con la siguiente diferencia:
 
 - Las calorías que gasta siempre es el doble de una rutina de running común
 
-**Ejemplo:** *la maraton de ba** es una maraton de intensidad 1.2
+**Ejemplo:** *la maraton de ba** es una maraton de intensidad 1.5
 - Al practicarse por 5 minutos quemará `(100 * (5 -2) * 1.5) * 2 = 900`
 - Al practicarse por 90 minutos quemará `(100 * (90-5) * 1.5) * 2 = 25500`
  

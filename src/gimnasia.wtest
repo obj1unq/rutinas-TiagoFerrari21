@@ -1,12 +1,28 @@
 import gimnasia.*
+import personas.*
 
 describe "rutinas" {
 
-//Punto 1: rutinas
-//	const correrEnLaPlaya = // Una actividad de running con intensisdad 1.2
-//	const remarEnElDelta = // Una actividad de remo
-//	const remarEnCaminoRemeros = // Una actividad de remo comptetitivo
-//	const maratonBA = //Una maraton con intensidad 1.5
+	test "rutinas" {
+	//Punto 1: rutinas
+	//	const correrEnLaPlaya = // Una actividad de running con intensisdad 1.2
+	//	const remarEnElDelta = // Una actividad de remo
+	//	const remarEnCaminoRemeros = // Una actividad de remo comptetitivo
+	//	const maratonBA = //Una maraton con intensidad 1.5
+		assert.equals(360, correrEnLaPlaya.caloriasQueQuema(5))
+		assert.equals(520, remarEnElDelta.caloriasQueQuema(5))
+		assert.equals(510, remarEnElCaminoDeLosRemeros.caloriasQueQuema(5))
+		assert.equals(900, maratonDeBA.caloriasQueQuema(5))
+	}
+
+	test "calamardo" {
+		calamardo.entrenar(correrEnLaPlaya)
+		calamardo.entrenar(remarEnElDelta)
+		calamardo.entrenar(remarEnElCaminoDeLosRemeros)
+		calamardo.entrenar(maratonDeBA )
+
+		assert.equals(59.948, calamardo.peso().truncate(3))
+	}
 
 //Punto 2: personas
 	//const calamardo = //Una persona Sedentaria con peso 60 y tiempo de ejercicio 5
